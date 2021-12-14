@@ -21,6 +21,12 @@ const SEO = ({ title, description }) => {
       htmlAttributes={{ language: "en-US" }}
       title={`${title} | ${site.siteMetadata.title}`}
       meta={[{ name: `description`, content: metaDescription }]}
+      link={[
+              {"rel": "icon", 
+               "type": "image/png", 
+               "href": "favicon.ico"
+              }
+             ]}
     ></Helmet>
   )
 }
